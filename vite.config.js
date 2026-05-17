@@ -16,7 +16,7 @@ const pageFiles = fs.readdirSync(pagesDir)
   }, {});
 
 export default defineConfig({
-  base: '/Empty_Project/',
+  base: '/SoundBoard/',
   plugins: [react()],
   build: {
     rollupOptions: {

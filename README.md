@@ -1,5 +1,5 @@
 # Website hosted on:
-[https://julssal99.github.io/Empty_Project/](https://julssal99.github.io/Empty_Project/)
+[https://julssal99.github.io/SoundBoard/](https://julssal99.github.io/SoundBoard/)
 
 ## Preliminary Setup
 1. Install **Node.js** (LTS recommended).

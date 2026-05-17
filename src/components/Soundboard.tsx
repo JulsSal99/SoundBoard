@@ -2,12 +2,12 @@ import React from "react";
 const sounds = [
   {
     name: "Sound 1",
-    file: "/Empty_Project/sounds/sound_1.m4a",
+    file: "/SoundBoard/sounds/sound_1.m4a",
   },
 ];
 
 const soundFiles = import.meta.glob(
-  "/Empty_Project/sounds/*.{mp3,wav,m4a,ogg}",
+  "/SoundBoard/sounds/*.{mp3,wav,m4a,ogg}",
   {
     eager: true,
     import: "default",
