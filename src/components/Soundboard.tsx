@@ -1,4 +1,5 @@
 import React from "react";
+import { styles } from "../styles/SoundBoard"
 const sounds = [
   {
     name: "Sound 1",
@@ -21,22 +22,24 @@ export default function Soundboard() {
   };
 
   return (
-    <div
-      style={{
-        display: "flex",
-        flexWrap: "wrap",
-        gap: "10px",
-        padding: "20px",
-      }}
-    >
-      {sounds.map((sound) => (
-        <button
-          key={sound.name}
-          onClick={() => playSound(sound.file)}
-        >
-          ▶ {sound.name}
-        </button>
-      ))}
-    </div>
+    <>
+      <div className="soundboard-container">
+        {sounds.map((sound) => (
+          <div key={sound.file} className="sound-item">
+            <button
+              className="sound-pad btn btn-dark"
+              onClick={() => playSound(sound.file)}
+            >
+              ▶
+            </button>
+
+            <div className="sound-title">
+              {sound.name}
+            </div>
+          </div>
+        ))}
+      </div>
+      <style>{styles}</style>
+    </>
   );
 }
