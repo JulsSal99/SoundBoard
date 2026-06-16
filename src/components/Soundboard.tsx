@@ -1,11 +1,6 @@
 import React from "react";
 import { styles } from "../styles/SoundBoard"
-const sounds = [
-  {
-    name: "Sound 1",
-    file: "/SoundBoard/sounds/sound_1.m4a",
-  },
-];
+import { sounds } from "../data/sounds";
 
 const soundFiles = import.meta.glob(
   "/SoundBoard/sounds/*.{mp3,wav,m4a,ogg}",
